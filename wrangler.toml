@@ -1,4 +1,4 @@
-name = "YourWorkerNameHere"
+name = "Alprkn"
 main = "TgMultiAutoReact.ts"
 compatibility_date = "2025-09-16"
 workers_dev = true
@@ -8,7 +8,7 @@ workers_dev = true
 
 [vars]
 BOT_TOKENS = """[
-  "Bot Token 1",
+  "8351950095:AAHibRp3_yoBesUj3yEmkxdKARRdIrIv4V0",
   "Bot Token 2",
   "Bot Token 3",
   "Bot Token 4",
