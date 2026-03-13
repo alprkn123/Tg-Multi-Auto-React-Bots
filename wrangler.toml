@@ -1,25 +1,21 @@
-name = "alprkn-bot-ig"
-main = "TgMultiAutoReact.ts"
-compatibility_date = "2025-09-16"
-workers_dev = true
-
-# Provide BOT_TOKENS as a JSON array or comma-separated string;
-# You Can Add Multiple Unlimited Bot Tokens ( Make Sure The All Tokens Are Correct and Added in The Same Format) 
+name = "tg-bot-downloader"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
 
 [vars]
-BOT_TOKENS = """[
-  "8351950095:AAHibRp3_yoBesUj3yEmkxdKARRdIrIv4V0",
-  "Bot Token 2",
-  "Bot Token 3",
-  "Bot Token 4",
-  "Bot Token 5",
-  
-  "Last Bot Token"
-]"""
+BOT_TOKENS = ""
+AUTO_DELETE_SECONDS = "300"
+ASSEMBLYAI_API_KEY = ""
 
-# wrangler.toml (wrangler v3.88.0^)
-[observability.logs]
-enabled = true
+[[r2_buckets]]
+binding = "VIDEOS"
+bucket_name = "tg-bot-videos"
 
+[[kv_namespaces]]
+binding = "CACHE"
+id = ""
 
-
+[[d1_databases]]
+binding = "DB"
+database_name = "tg-bot-db"
+database_id = ""
